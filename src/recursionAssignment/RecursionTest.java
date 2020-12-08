@@ -14,6 +14,9 @@ public class RecursionTest{
       assertEquals(1,Recursion.count8(8));
     }
     public void Test2(){
-      assertEquals(3, Recursion.count8(818));
+      assertEquals(2, Recursion.count8(818));
+    }
+    public void Test3(){
+      assertEquals(4, Recursion.count8(8818));
     }
 }
