@@ -15,9 +15,9 @@ public class Recursion{
       return count8(intN / 10);
     }
   }
-  //public static String pairStar(String str){
+  public static String pairStar(String str){
 
-    //if (str.equals)
+    if (str.equals)
 
-  //}
+  }
 }
