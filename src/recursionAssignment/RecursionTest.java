@@ -19,7 +19,7 @@ public class RecursionTest{
   }
   @Test
   public void Test3(){
-    assertEquals(3, Recursion.count8(8818));
+    assertEquals(4, Recursion.count8(8818));
   }
   public void Test4(){
     assertEquals("hel*lo", Recursion.pairStar("hello"));
