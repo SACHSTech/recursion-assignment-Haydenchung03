@@ -10,24 +10,27 @@ public class RecursionTest{
   * An initial test
   */
   @Test
-  public void Test1(){
-    assertEquals(1,Recursion.count8(8));
+  public void Test1() {
+    assertEquals(Recursion.count8(8), 1);
   }
   @Test
-  public void Test2(){
-    assertEquals(2, Recursion.count8(818));
+  public void Test2() {
+    assertEquals(Recursion.count8(818), 2);
   }
   @Test
-  public void Test3(){
-    assertEquals(4, Recursion.count8(8818));
+  public void Test3() {
+    assertEquals(Recursion.count8(8818), 4);
   }
-  public void Test4(){
+  @Test
+  public void Test4() {
     assertEquals("hel*lo", Recursion.pairStar("hello"));
   }
-  public void Test5(){
+  @Test
+  public void Test5() {
     assertEquals("x*xy*y", Recursion.pairStar("xxyy"));
   }
-  public void Test6(){
+  @Test
+  public void Test6() {
     assertEquals("a*a*a*a", Recursion.pairStar("aaaa"));
   }
 }
