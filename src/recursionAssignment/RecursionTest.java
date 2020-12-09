@@ -11,15 +11,15 @@ public class RecursionTest{
   */
   @Test
   public void Test1() {
-    assertEquals(Recursion.count8(8), 1);
+    assertEquals(1, Recursion.count8(8));
   }
   @Test
   public void Test2() {
-    assertEquals(Recursion.count8(818), 2);
+    assertEquals(2, Recursion.count8(818));
   }
   @Test
   public void Test3() {
-    assertEquals(Recursion.count8(8818), 4);
+    assertEquals(4, Recursion.count8(8818));
   }
   @Test
   public void Test4() {
@@ -32,5 +32,13 @@ public class RecursionTest{
   @Test
   public void Test6() {
     assertEquals("a*a*a*a", Recursion.pairStar("aaaa"));
+  }
+  @Test
+  public void Test7() {
+    assertEquals("yza", Recursion.stringClean("yza"));
+  }
+  @Test
+  public void Test8() {
+    asserEquals("abbbcdd", Recursion.stringClean("abcd"));
   }
 }
