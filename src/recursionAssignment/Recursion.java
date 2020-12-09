@@ -1,8 +1,10 @@
 package recursionAssignment;
 import java.io.*;
-
 public class Recursion{
-  // Program for counting number of 8 in number
+  /**
+  * Given a non-negative intN, compute recursively (no loops) the count of the occurrences of 8 as a digit, except that an 8 with another 8 immediately to its left counts double, so 8818 yields 4. Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while divide (/)by 10 removes the rightmost digit (126 / 10 is 12).
+  * @author H.Chung
+  */
   public static int count8(int intN){
     // If number of 8 is equal to 0, return 0
     if (intN == 0) {
@@ -18,13 +20,18 @@ public class Recursion{
       return count8(intN / 10);
     }
   }
-  // Runs a program 
+  /**
+  *Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*"
+  * @author H.Chung
+  */
   public static String pairStar(String str){
-
+    // If the string is equal to nothing or has 1 letter, just return the string. 
     if (str.equals("") || str.length() == 1) {
       return str;
+    // If the character is the same to one another, add a star in the middle of the word
     } else if(str.charAt(0) == str.charAt(1)) {
       return str.charAt(0) + "*" + pairStar(str.substring(1));
+    // If all other conditions fail, just print out the characters without a star in the middle
     } else {
       return str.charAt(0) + pairStar(str.substring(1));
     }

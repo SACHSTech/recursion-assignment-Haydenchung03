@@ -12,6 +12,7 @@ public class RecursionTest{
   @Test
   public void Test1() {
     assertEquals(1, Recursion.count8(8));
+    // make assertion statement(s)
   }
   @Test
   public void Test2() {
