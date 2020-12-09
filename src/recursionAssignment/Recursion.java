@@ -41,12 +41,14 @@ public class Recursion{
   * @author H.Chung
   */
   public static String stringClean(String str) { 
-    // If the word is less than 2 characters, it just returns the word since there is no repeats
+    // If the word is less than 2 characters, it just returns the word since there is no repeats.
     if(str.length() < 2) {
       return str;
+    // If the first character is equal to the second character, only return the second character
     } else if(str.charAt(0) == str.charAt(1)) {
       return stringClean(str.substring(1));
     }
+  // Final return statement
   return str.charAt(0) + stringClean(str.substring(1));
   }
 }
