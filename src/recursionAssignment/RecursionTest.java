@@ -35,14 +35,14 @@ public class RecursionTest{
   }
   @Test
   public void Test7() {
-    assertEquals("yza", Recursion.stringClean("yza"));
+    assertEquals("yza", Recursion.stringClean("yyzzza"));
   }
   @Test
   public void Test8() {
-    assertEquals("abbbcdd", Recursion.stringClean("abcd"));
+    assertEquals("abcd", Recursion.stringClean("abbbcdd"));
   }
   @Test
   public void Test9() {
-    assertEquals("Hello", Recursion.stringClean("Helo"));
+    assertEquals("Helo", Recursion.stringClean("Hello"));
   }
 }
