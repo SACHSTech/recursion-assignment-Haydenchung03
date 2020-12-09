@@ -36,8 +36,12 @@ public class Recursion{
       return str.charAt(0) + pairStar(str.substring(1));
     }
   }
+  /**
+  * Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. So "yyzzza" yields "yza".
+  * @author H.Chung
+  */
   public static String stringClean(String str) { 
-
+    // If the word is less than 2 characters, it just returns the word since there is no repeats
     if(str.length() < 2) {
       return str;
     } else if(str.charAt(0) == str.charAt(1)) {
